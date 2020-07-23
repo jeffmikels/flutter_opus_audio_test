@@ -6,16 +6,26 @@ import 'package:opus_flutter/opus_dart.dart';
 import 'package:audiostream/audiostream.dart';
 
 void main() {
-  initOpus();
-  Audiostream.initialize(
-    rate: 48000,
-    channels: 2,
-    bufferSeconds: 0,
-  );
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    initOpus();
+    Audiostream.initialize(
+      rate: 48000,
+      channels: 2,
+      bufferSeconds: 0,
+    );
+
+    return MaterialApp(
+      home: OpusTestApp(),
+    );
+  }
+}
+
+class OpusTestApp extends StatelessWidget {
   Future play() async {
     // sample.raw is 48000 pcm_s16le
     print('sending from sample.raw');
