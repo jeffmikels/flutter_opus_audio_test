@@ -11,9 +11,11 @@ packages:
   audiostream:
     dependency: "direct main"
     description:
-      path: "local_packages/audiostream"
-      relative: true
-    source: path
+      path: "."
+      ref: HEAD
+      resolved-ref: f7aa47b80bf98d510bc9758fe211ac71efa407ad
+      url: "https://github.com/jeffmikels/audiostream"
+    source: git
     version: "0.0.1"
   boolean_selector:
     dependency: transitive
@@ -91,9 +93,11 @@ packages:
   opus_flutter:
     dependency: "direct main"
     description:
-      path: "local_packages/opus_flutter"
-      relative: true
-    source: path
+      path: "."
+      ref: HEAD
+      resolved-ref: "3d53ffcce42273d12368594ac840975038604415"
+      url: "https://github.com/EPNW/opus_flutter"
+    source: git
     version: "1.0.0"
   path:
     dependency: transitive

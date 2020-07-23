@@ -24,9 +24,11 @@ dependencies:
   flutter:
     sdk: flutter
   opus_flutter:
-    path: local_packages/opus_flutter
+    # path: local_packages/opus_flutter
+    git: https://github.com/EPNW/opus_flutter
   audiostream:
-    path: local_packages/audiostream
+    # path: local_packages/audiostream
+    git: https://github.com/jeffmikels/audiostream
 
 dev_dependencies:
   flutter_test:
